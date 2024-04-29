@@ -26,7 +26,6 @@ jobs:
           pip install -r requirements.txt  # Change this to the path of your requirements file
 
       - name: SonarQube Scan
-        uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
